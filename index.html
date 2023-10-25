@@ -41,10 +41,27 @@
 
         img {
             width: 100%;
+            max-width: 100%;
+            height: auto;
         }
 
         h2 {
             margin-top: 0;
+        }
+
+        /* Add responsive styles */
+        @media screen and (max-width: 768px) {
+            .w3-display-bottomleft {
+                width: 100%;
+            }
+
+            .w3-row {
+                margin: 20px 0;
+            }
+
+            .w3-half {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -59,7 +76,7 @@
     <div class="w3-row w3-container">
         <div class="w3-half">
             <div class="w3-topbar">
-                <img src="img/cellphone.jpg" style="width:100%"height="100%" alt="Cellphone Image">
+                <img src="img/cellphone.jpg" style="width:100%" height="100%" alt="Cellphone Image">
                 <h2>Smart Vacation</h2>
                 <p>Full vacation control from your cell phone.</p>
             </div>
@@ -67,7 +84,7 @@
 
         <div class="w3-half">
             <div class="w3-topbar">
-                <img src="img/sealions.jpg" style="width:100%"height="100%" alt="Sealions Image">
+                <img src="img/sealions.jpg" style="width:100%" height="100%" alt="Sealions Image">
                 <h2>Super Offers</h2>
                 <p>Up to 50% offers. Always 25% student offers.</p>
             </div>
